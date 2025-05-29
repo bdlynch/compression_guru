@@ -16,6 +16,8 @@ import tempfile
 import statistics
 from datetime import timedelta
 
+all_results = []  # Add this line at the beginning
+
 class AdvancedVideoAnalyzer:
     def __init__(self):
         self.supported_formats = {'.mp4', '.mkv', '.avi', '.mov', '.m4v', '.webm', '.flv', '.wmv', '.ts', '.mts'}
@@ -1128,7 +1130,6 @@ class AdvancedVideoAnalyzer:
             f.write("   Each log contains comprehensive analysis and recommendations\n")
 
 def main():
-    all_results = []  # Add this line at the beginning
     """Main function - Your personal compression guru interface"""
     parser = argparse.ArgumentParser(
         description="🎬 ULTIMATE VIDEO COMPRESSION GURU - Your Personal M1-Optimized Expert 🚀",
